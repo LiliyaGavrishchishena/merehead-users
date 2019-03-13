@@ -5,10 +5,12 @@ import thunk from 'redux-thunk';
 
 import usersReducer from '../redux/usersReducer';
 import currentPage from '../redux/currentPageReducer';
+import limitReducer from '../redux/limitReducer';
 
 const rootReducer = combineReducers({
   users: usersReducer,
-  currentPage: currentPage
+  currentPage: currentPage,
+  limit: limitReducer
 });
 const logger = createLogger();
 
